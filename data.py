@@ -16,7 +16,8 @@ st.set_page_config(
 # Load dataset
 @st.cache_data # menggunakan cache agak tidak load berulang-ulang
 def load_data():
-    return pd.read_csv('D:\Learning_Streamlit\Data\data_dummy_retail_store.csv')
+    return pd.read_csv('Data/data_dummy_retail_store.csv')
+
 
 # load data penjualan
 df_sales = load_data() #mengambil fungsi load_data
